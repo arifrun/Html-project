@@ -1,0 +1,700 @@
+ 
+
+ @import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
+ /* ======================  
+   common css start
+ ===========================*/ 
+ *{ 
+    margin: 0; 
+    padding: 0; 
+    outline: 0; 
+    box-sizing: border-box; 
+   } 
+  a{ 
+    display: inline-block; 
+    text-decoration: none;
+  } 
+  ul, ol{ 
+    list-style: none; 
+    margin: 0; 
+    padding: 0;   
+  } 
+  p,h1,h2,h3,h4,h5,h6{ 
+    margin: 0; 
+    padding: 0;
+  }   
+  .coomon_button a{ 
+    padding: 20px 50px; 
+    background-color: #FF9600; 
+    font-size: 18px; 
+    font-weight: 700; 
+    font-family: 'IBM Plex Sans', sans-serif; 
+    color: #FFFFFF; 
+    border-radius: 10px;
+  }  
+  .common_heading h3{ 
+    font-size: 30px; 
+    font-weight: 400; 
+    font-family: 'Yellowtail', cursive;
+  }  
+  .common_heading h2{ 
+    font-size: 54px; 
+    font-weight: 700;    
+    font-family: 'IBM Plex Sans', sans-serif; 
+    position: relative; 
+  } 
+  .common_heading h2::after{ 
+    content: ''; 
+    top: 100%; 
+    left: 0; 
+    width: 83px; 
+    height: 2px; 
+    position: absolute;  
+  } 
+  .common_heading p{ 
+    font-size: 18px; 
+    font-weight: 400; 
+    font-family: 'IBM Plex Sans', sans-serif; 
+  }
+  /* ======================  
+     common css end
+   ===========================*/  
+
+  /* ====================== 
+    menu part start 
+  ==========================*/ 
+  .main_menu{ 
+    width: 100%; 
+    padding: 20px 0 !important;  
+    position: absolute; 
+    top: 0; 
+    left: 0;  
+    z-index: 99;
+  } 
+  .main_menu ul{ 
+    gap: 45px;
+  }     
+  .main_menu ul li a{ 
+    font-size: 16px; 
+    font-weight: 700; 
+    font-family: 'IBM Plex Sans', sans-serif; 
+    color: #F6F0F0 !important;
+  }  
+  .main_menu ul li a:hover{ 
+    color: #FF9600 !important; 
+
+  }  
+  #nav_color ul  li .rong{ 
+    color: #FF9600;
+  }  
+  .main_menu ul li ul{ 
+    width: 200px;
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    background-color: #f1f1f1;  
+    border-radius: 10px;
+    visibility: hidden; 
+    opacity: 0; 
+    transition: .3s;
+   
+  }  
+  .main_menu ul li{ 
+    position: relative; 
+    
+    }
+  .main_menu ul li:hover > ul{ 
+    visibility: visible; 
+    opacity: 1;
+
+  }
+  .main_menu ul li ul li a{ 
+    width: 100%;
+    padding: 10px 0 10px 10px;
+    color: #000 !important; 
+    transition: .3s; 
+    border-radius: 10px;
+  } 
+  .main_menu ul li ul li a:hover{ 
+    background-color: #FF9600; 
+    color: #000 !important; 
+    letter-spacing: 2px; 
+  } 
+  .main_menu ul li ul li ul{ 
+    left: 100%; 
+    top: 0;
+  }
+
+  /* ====================== 
+    menu part end
+  ==========================*/  
+
+  /* ===================
+   banner part start 
+  ====================== */  
+ #banner{ 
+    padding: 240px 0 212px; 
+    position: relative;
+ }  
+ .banner_shape img{ 
+    width: 100%;
+   position: absolute;  
+   bottom: 0;
+   left: 0;
+ }
+ .banner_content h1{ 
+    width: 820px;
+    font-size: 72px; 
+    font-weight: 700; 
+    font-family: 'IBM Plex Sans', sans-serif; 
+    color: #FFFFFF;  
+    text-align: center;
+    margin: 0 auto;  
+    margin-bottom: 48px;
+ }  
+ .banner_content h1 span{ 
+  color: red; 
+ } 
+ .banner_content h1 .rong2{ 
+  color: #FF9600;
+ }
+ .coomon_button{ 
+    display: flex; 
+    justify-content: center; 
+    gap: 55px; 
+ }  
+  .banner_buton a{
+    background-color: #FF9600; 
+    color: #fff; 
+    transition: all linear.3s;
+  } 
+  .banner_buton a:hover{ 
+    background-color: #fff;  
+    color: #000;
+  } 
+  .banner_buton .rong1{ 
+    background-color: #FF9600;
+  } 
+  .banner_buton .rong1:hover{ 
+    background-color: #FFFFFF; 
+    color: #000;
+  }
+  /* ===================
+   banner part end
+  ====================== */ 
+
+  /* ======================== 
+   Adventure part start
+  ========================== */ 
+  #adventure{ 
+    padding: 100px; 
+    background-color: #E5E5E5;
+  }
+  .adventure_detail h3{ 
+    color: #49C4F5;
+  }  
+  .adventure_detail h2{
+    padding: 5px 0 30px;
+    color: #222222; 
+    margin-bottom: 40px;
+  } 
+  .adventure_detail h2::after{  
+     background-color: #000;
+  } 
+  .adventure_detail p{ 
+    color: #000000;
+  }  
+  .adventure_detail ul li{ 
+    display: flex; 
+    gap: 12px; 
+  } 
+  .adventure_detail ul li span{ 
+    height: 30px; 
+    width: 30px; 
+    color: green; 
+    border-radius: 50%;  
+    border: 1px solid green; 
+    text-align: center; 
+    line-height: 30px;
+  } 
+  .adventure_detail ul { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 15px;  
+    margin: 33px 0 44px;     
+  }   
+  .adventure_btn { 
+    justify-content: start;
+  }  
+  .adventure_btn a{ 
+    transition:  .3s; 
+
+  }
+  .adventure_btn a:hover{ 
+    background-color: #14B9F1; 
+
+  }
+   .adventure_gallery{ 
+    display: flex;  
+    gap: 50px; 
+    align-items: center;
+   }  
+    .counter{ 
+      margin-top: 100px;
+
+    } 
+    .counter_item{ 
+      text-align: center;
+    }
+    .counter_item h2{ 
+      font-size: 80px; 
+      font-weight: 700; 
+      font-family: 'IBM Plex Sans', sans-serif; 
+      color: #000;
+    }  
+    .counter_item p{ 
+      font-size: 18px; 
+      font-weight: 400; 
+      font-family: 'IBM Plex Sans', sans-serif; 
+      color: #000;  
+      padding-bottom: 23px;  
+    }  
+    .counter_item.item-4, 
+    .counter_item.item-1{ 
+      background-color: #FFF4E5;
+    } 
+    .counter_item.item-2{ 
+      background-color: #E7FDE9;
+    }
+    .counter_item.item-3{ 
+      background-color: #F2F2FD;
+    } 
+    /* ======================== 
+   Adventure part end
+  ========================== */  
+
+  /* ===================== 
+     Activities part start      
+   ================= */ 
+    #Activities{ 
+      padding: 110px 0; 
+      background-color: #0C3543; 
+      position: relative;
+    } 
+    .activities_heading{ 
+      margin-bottom: 74px;
+    }
+    .activities_heading h3{ 
+      color: #FF960B;  
+    } 
+    .activities_heading h2{ 
+      color: #fff;
+      padding: 8px 0 22px;
+    }   
+    .activities_heading p{ 
+      color: #fff; 
+      margin-top: 37px;
+    } 
+    .activities_heading h2::after{ 
+      background-color: #fff;
+    }  
+    .activities_item h3{ 
+       font-size: 30px; 
+       font-weight: 700; 
+       font-family: 'IBM Plex Sans', sans-serif; 
+       color: #fff; 
+       margin-top: 37px; 
+       transition: .3s;
+    }  
+    .activities_item:hover h3{ 
+      color: #FF9600;
+    }
+    .activities_item{ 
+      background-color: #0F4152; 
+      text-align: center; 
+      border-radius: 15px; 
+      overflow: hidden; 
+      cursor: pointer;
+    }
+    .activities_item p{ 
+      font-size: 16px; 
+      font-weight: 400; 
+      font-family: 'IBM Plex Sans', sans-serif; 
+      color: #fff; 
+      padding: 10px 0 45px;
+   } 
+
+   .divided_marjin{ 
+    margin-top: 50px;
+   }
+   .activities_footer h2{ 
+    font-size: 160px; 
+    font-weight: 400; 
+    font-family: 'Arizonia', cursive; 
+    color: #fff;  
+    text-align: center; 
+    margin-top: 117px;
+   }   
+
+   .activities_shape{ 
+     position: absolute; 
+     bottom: 0; 
+     left: 0; 
+     width: 100%;
+   } 
+   .activities_footer{ 
+    position: relative;
+   }  
+   .footer_logo{ 
+    width: 430px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    position: absolute;
+     top: 80%; 
+     left: 0; 
+     bottom: 0; 
+   }
+     /* ===================== 
+      Activities part end      
+     ================== */ 
+
+     /* ================
+       extreme part start 
+     =================== */  
+     .extreme{ 
+      background-color: #FF9600;  
+      padding-top: 30px; 
+     } 
+     .extreme_logo{ 
+      text-align: center;
+     }  
+     .extreme_head h2{  
+      font-size: 54px; 
+      font-weight: 700;
+      font-family: 'IBM Plex Sans', sans-serif; 
+      color: #fff; 
+      text-align: center; 
+      padding: 28px 0 50px 0;
+     } 
+     .extreme_head p{ 
+      font-size: 30px; 
+      font-weight: 700; 
+      font-family: 'IBM Plex Sans', sans-serif; 
+      color: #fff;  
+      text-align: center;      
+     } 
+     .extreme_btn{ 
+       margin: 55px 0 96px 0; 
+       
+     }
+     .extreme_btn a{ 
+       background-color: #0C3543; 
+       transition: all linear .3s;
+     }  
+     .extreme_btn a:hover{ 
+      background-color: #fff; 
+      color: red;
+     }  
+     .extreme_btn a{ 
+      color: red;
+     }
+     
+
+     .extreme_body{ 
+      display: flex; 
+      gap: 74px; 
+      position: relative; 
+      bottom: -50px;
+     }
+     .extrem_item{ 
+      width: 33%; 
+      position: relative;
+     } 
+     .extreme_detail{ 
+      position: absolute;  
+      left: 25px;  
+      bottom: 10px;
+     }
+     .extrem_img{ 
+       border-radius: 15px; 
+       overflow: hidden;
+     }  
+     .extreme_detail h3{ 
+       font-size: 40px; 
+       font-weight: 700; 
+       font-family: 'IBM Plex Sans', sans-serif; 
+       color: #fff;  
+     }    
+     .extreme_detail h4 { 
+      font-size: 28px; 
+      font-weight: 700; 
+      font-family: 'IBM Plex Sans', sans-serif; 
+      color: #fff; 
+      padding: 27px 0 38px 0; 
+      border-bottom: 2px solid #fff;
+
+     }  
+     .extreme_detail p{ 
+      font-size: 18px; 
+      font-weight: 400; 
+      font-family: 'IBM Plex Sans', sans-serif; 
+      color: #A0A0A0;     
+      margin-top: 28px;   
+     }  
+     /* =================
+       extreme part end
+     =================== */ 
+
+     /* ====================
+      choose part start 
+     ====================== */ 
+     .choose_part{ 
+      padding: 190px 0 230px 0;
+     } 
+     .choose_head h3{ 
+      font-size: 30px; 
+      font-weight: 400; 
+      font-family: 'Yellowtail', cursive;
+      color: #14B9F1;
+     }  
+     .choose_head{ 
+      text-align: center; 
+      margin-bottom: 50px;
+     }
+     .choose_head h2{ 
+      font-size: 30px; 
+      font-weight: 700; 
+      font-family: 'IBM Plex Sans', sans-serif; 
+      color: #000; 
+      padding: 30px 0; 
+      position: relative;
+     }
+     .choose_head h2::after{ 
+      content: ''; 
+      position: absolute; 
+      width: 100px; 
+      height: 2px; 
+      background-color: #A0A0A0; 
+      top: 100%; 
+      left: 50%; 
+      transform: translateX(-50%);
+     }  
+
+     .choose_item{ 
+      margin-left: 30px;
+     }
+    
+    .choose_item h2{ 
+      font-size: 24px; 
+      font-weight: 700; 
+      font-family: 'IBM Plex Sans', sans-serif; 
+      color: #000; 
+      text-align: center;  
+      margin: 60px 0 30px 0;
+    }  
+    .choose_item p{ 
+      font-size: 18px; 
+      font-weight: 400; 
+      font-family: 'IBM Plex Sans', sans-serif; 
+      color: #000; 
+      text-align: center;    
+    } 
+    .choose_logo{ 
+      text-align: center;
+    }
+    /* ====================
+      choose part end
+     ====================== */
+
+     /* =====================
+      sports part start
+     ====================== */ 
+     #sports{ 
+      padding-bottom: 265px; 
+     }   
+     .sports_heading{ 
+      margin-bottom: 96px;
+     }
+     .sports_image{ 
+      border-top-right-radius: 15px; 
+      border-top-left-radius: 15px; 
+      overflow: hidden;
+     } 
+     .sports_heading h2::after{ 
+      height: 3px;
+      background-color: #A0A0A0;
+    }  
+    .sportsleft_item h3{ 
+      font-size: 30px; 
+      font-weight: 400; 
+      font-family: 'Yellowtail', cursive; 
+      color: #FF9600;
+    }  
+    .sportsleft_item h2{ 
+      width: 407px;
+      font-size: 54px; 
+      font-weight: 700; 
+      font-family: 'IBM Plex Sans', sans-serif; 
+      color: #000; 
+      padding: 3px 0 25px 0;
+    } 
+    .sportsright_item p{ 
+      font-size: 18px; 
+      font-weight: 400; 
+      font-family: 'IBM Plex Sans', sans-serif; 
+      color: #000; 
+      margin-top: 38px;
+    }  
+    .sports{ 
+      padding-bottom: 265px;
+    } 
+    .sports_item h2{ 
+      width: 315px; 
+      font-size: 28px; 
+      font-weight: 700; 
+      font-family: 'IBM Plex Sans', sans-serif; 
+      color: #000; 
+      text-align: center; 
+      margin: 0 auto; 
+      margin-top: 38px;
+    } 
+    .sports_item p{ 
+      width: 312px;
+      font-size: 18px; 
+      font-weight: 400; 
+      font-family: 'IBM Plex Sans', sans-serif; 
+      color: #000; 
+      text-align: center; 
+      margin: 0 auto; 
+      padding: 32px 0 42px 0;
+    } 
+    .sports_item .sports_btn{ 
+      text-align: center; 
+      border-top: 2px solid #000; 
+      padding-top: 44px;
+    }
+    .sports_item .sports_btn a{ 
+      font-size: 18px; 
+      font-weight: 700; 
+      font-family: 'IBM Plex Sans', sans-serif; 
+      color: #14B9F1;   
+      transition: all linear .3s; 
+    }  
+    .sports_item .sports_btn a:hover{ 
+      background-color: #14B9F1; 
+      padding: 10px 30px; 
+      color: #fff; 
+      border-radius: 4px;
+    }
+    .sports_item .sports_btn .button_color1{ 
+      color: #FF9600;
+    } 
+    .sports_item .sports_btn .button_color2{ 
+      color: rgba(26, 255, 0, 0.819);
+    }
+      /* =====================
+      sports part end
+      ====================== */  
+      /* ======================
+      sponsore part start 
+      ========================== */ 
+       #sponsore{ 
+        padding-bottom: 42px;
+       }  
+      /* ======================
+         sponsore part end
+       ========================== */  
+      /* =====================
+        footer part start  
+       ======================= */ 
+      #footer{ 
+        padding: 80px 0 110px 44px; 
+        background: url(../images/footer-image.png) #0C3543; 
+        background-size: 55%; 
+        background-repeat: no-repeat;
+      }    
+      .footer_logo2{ 
+        margin-bottom: 80px; 
+      } 
+      .footer_item{ 
+        display: flex; 
+        gap: 34px;
+      } 
+      .footer_item{ 
+       padding-bottom: 52px; 
+       border-bottom: 2px solid #C4C4C4;
+       
+      }
+    
+     .footer_item a{  
+        width: 330px; 
+        height: 73px;
+        font-size: 18px; 
+        font-weight: 700; 
+        font-family: 'IBM Plex Sans', sans-serif; 
+        color: #000; 
+        background-color: #FF9600; 
+        padding: 10px 30px; 
+        border-color: #FF9600; 
+        text-align: center;  
+         transition: .3s; 
+         border-radius: 5px;
+     }   
+     .footer_item a:hover { 
+      background-color: red; 
+      color: #fff;
+       
+     }
+     .footer_item p{  
+     
+      font-size: 18px; 
+      font-weight: 400; 
+      font-family: 'IBM Plex Sans', sans-serif; 
+      color: #fff;
+     }  
+     .footermiddle_item{ 
+      padding-top: 70px;
+     } 
+     .footermiddle_item{ 
+      display: flex;  
+      gap: 34px;
+     } 
+     .footermiddle_item h2{ 
+      font-size: 30px; 
+      font-weight: 700;  
+      font-family: 'IBM Plex Sans', sans-serif; 
+      color: #fff;
+
+     } 
+     .footermiddle_item ul li{ 
+      font-size: 18px; 
+      font-weight: 400;  
+      font-family: 'IBM Plex Sans', sans-serif; 
+      color: #fff; 
+     }  
+     .footermiddle_item ul{ 
+      display: flex;  
+      flex-direction: column; 
+      gap: 32px;
+     }
+     
+     .footerlast_item span{  
+      font-size: 18px; 
+      font-weight: 400;  
+      font-family: 'IBM Plex Sans', sans-serif; 
+      color: #fff;  
+     } 
+     .footerlast_item{ 
+      padding-top: 75px;
+     }
+     
+      
+   
+
+      
+    /* =====================
+      footer part end 
+     ======================= */

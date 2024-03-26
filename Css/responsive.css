@@ -1,0 +1,136 @@
+@media (min-width: 1400px) { } 
+@media (min-width: 1200px) and (max-width: 1399px) { } 
+@media (min-width: 992px) and (max-width: 1199px) { } 
+@media (min-width: 768px) and (max-width: 991px) { } 
+
+
+@media (min-width: 576px) and (max-width: 767px) { 
+    .main_menu{ 
+        background-color: teal;
+    }
+} 
+
+
+@media (max-width: 575px) {   
+  /* =================
+     common css start 
+   =================== */   
+   .coomon_button a {
+    padding: 10px 40px; 
+    width: fit-content;
+   } 
+   .coomon_button {
+	gap: 20px;
+	flex-direction: column; 
+    align-items: center;
+   }  
+   .common_heading h3 {
+    font-size: 24px;  
+} 
+    /* =================
+      common css end 
+     ================= */
+    /* ==================
+     menu part start 
+    =================== */ 
+    .main_menu .main_logo{ 
+        width: 150px;
+    } 
+    .main_menu button{ 
+        color: #fff !important; 
+        font-size: 24px;
+    } 
+    .main_menu ul li a { 
+        text-align: center;
+    } 
+    .main_menu ul li ul {
+        display: none;      
+    }  
+    .main_menu .navbar-collapse {
+        background: green; 
+        padding: 10px 0;
+    } 
+    /* ==================
+     menu part end
+    =================== */ 
+    /* =================
+     banner part srtart 
+    ==================== */ 
+    #banner {
+        padding: 120px 0 60px;  
+    } 
+    .banner_content h1 {
+        width: 100%; 
+        font-size: 34px; 
+        margin-bottom: 30px;
+    }
+    /* =================
+     banner part end 
+     ==================== */
+
+     /* ===================
+      adventure part start 
+      ===================== */ 
+      #adventure {
+        padding: 60px;
+        background-color: #E5E5E5;
+    }   
+    .common_heading h2 {
+        font-size: 28px;
+    } 
+    .common_heading p {
+        font-size: 16px;
+    } 
+    #adventure {
+        padding: 40px;
+        
+    } 
+    .adventure_detail ul li span {
+        width: 45px;
+    }  
+    .adventure_gallery {
+        gap: 18px;   
+        padding-top: 30px;
+    } 
+    .counter_item h2 {
+        font-size: 46px;
+    } 
+    .counter_item {
+        margin-top: 20px; 
+        height: 120px;
+    } 
+    .counter {
+        margin-top: 22px;
+    }
+     /*==================
+       adventure part end 
+      =================== */ 
+      
+      /*=================== 
+       activities part start 
+       =====================*/ 
+       .activities_item {
+        margin-bottom: 20px;
+    } 
+     #Activities {
+        padding: 75px 0;
+     } 
+     .divided_marjin {
+        margin-top: 28px;
+    }
+       /*=================== 
+       activities part end 
+       =====================*/ 
+
+       /*================== 
+       extrem part start 
+       ====================*/ 
+       .activities_footer h2 {
+     
+    }
+       /*================== 
+       extrem part end
+       ====================*/
+    
+   
+}  
